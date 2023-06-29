@@ -403,12 +403,69 @@ header {
   position: absolute;
 }
 
-.news h1{
+.news-heding {
+  width: 100%;
   position: relative;
 }
 
+.box-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
 .news-box{
-  
+  width:50%;
+  height:400px;
+  /* background-color: #fff; */
+  margin: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.news-img{
+  width: 100%;
+  height: 250px;
+}
+
+.news-box .date{
+  width: 100%;
+  height: 30px;
+  background-color: #3f3e3c; 
+  padding: 10px;
+  padding-right: 0;
+}
+
+.box-news-img{
+  width: 100%;
+  height: 100%;
+}
+
+.news-box .news-heading{
+  width: 100%;
+  height: fit-content;
+background-color: rgb(165, 211, 196);
+padding: 10px;
+padding-right: 0;
+}
+
+.news-box:hover{
+  transform: scale(1.1);
+   opacity: 0.9; 
+}
+
+.news-box:hover .date{
+  background-color: #000;
+  /* opacity: 0.2; */
+  color: #fff;
+  border-radius: 10px;
+}
+
+.news-box:hover .news-heading{
+  border-radius: 10px;
+  background-color: rgb(139, 223, 195);
 }
 /* meidum screen  */
 @media (min-width: 992px) {
