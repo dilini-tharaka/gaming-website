@@ -6,6 +6,7 @@
 * {
   padding: 0;
   margin: 0;
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -69,11 +70,11 @@ header {
   color: white;
 }
 
-.btn-icon {
+/* .btn-icon {
   max-width: 17px;
   margin-left: 5px;
   transition: all 1s ease-in-out;
-}
+} */
 
 .btn-buy-now:hover {
   background-color: #fad157;
@@ -81,9 +82,9 @@ header {
   color: black;
 }
 
-.btn-buy-now:hover .btn-icon {
+/* .btn-buy-now:hover .btn-icon {
   transform: scale(1.1);
-}
+} */
 
 .section {
   width: 100%;
@@ -235,7 +236,7 @@ header {
 }
 
 .content .box .box-img {
-  width: 55%;
+  width: 60%;
   height: 400px;
   position: absolute;
 }
@@ -420,7 +421,7 @@ header {
   width: 50%;
   height: 400px;
   /* background-color: #fff; */
-  margin: 30px;
+  margin: 28px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -490,6 +491,7 @@ header {
   width: 100%;
   position: relative;
   display: flex;
+  /* background-color: #f2c12e; */
 }
 
 .comment .tophead h1 {
@@ -497,11 +499,11 @@ header {
   z-index: 3000;
   margin-bottom: 32px;
 }
+
 .prophoto {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  /* background-color: #fff; */
   margin: 35px;
 }
 
@@ -536,7 +538,7 @@ header {
 
 .lefttopcorner {
   /* background-color: #ddd; */
-  width: 99%;
+  /* width: 99%; */
    height: 200px;
   display: flex;
   flex-direction: row;
