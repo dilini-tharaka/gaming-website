@@ -13,7 +13,9 @@
     <title>Assassin's Creed - Origins</title>
 
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="./video.js"></script>
   </head>
+
   <body>
     <div class="container">
       <!-- header start   -->
@@ -24,22 +26,28 @@
             <img src="img/logotext.avif" alt="" class="logo" />
           </div>
           <ul class="nav-list">
-            <li class="active">Home</li>
-            <li>Info</li>
-            <li>News</li>
-            <li>Media</li>
-            <button class="btn-buy-now">
-              Buy Now
-              <!-- <img src="./img/sword.svg" class="btn-icon" /> -->
-            </button>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#info">Info</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#media">Media</a></li>
+            <a href="buy.html"><button class="btn-buy-now">Buy Now</button></a>
           </ul>
         </header>
       </div>
       <!-- header end -->
 
+
+
       <!-- home start  -->
-      <div class="section home">
+      <div class="section home" id="home">
         <div class="layer"></div>
+        <div class="video-container" id="trailer">
+          <div class="video-layer" onclick="closeVideo();"></div>
+          <video id="game-trailer" controls>
+            <source src="Trailer.mp4" id="video" type="video/mp4" />
+          </video>
+        </div>
+
         <div class="home-section">
           <div class="text-container">
             <h2>
@@ -55,8 +63,10 @@
               And discover the origin story of the Assassin’s Brotherhood.
             </p>
             <div class="btn-container">
-              <button class="btn-watch-trailer">Watch Trailer</button>
-              <button class="btn-buy-now">Buy Now</button>
+              <button class="btn-watch-trailer" id="btn-watch-trailer" onclick="playVideo();">Watch Trailer</button>
+              <a href="buy.html"
+                ><button class="btn-buy-now">Buy Now</button></a
+              >
             </div>
           </div>
 
@@ -68,7 +78,7 @@
       <!-- home end  -->
 
       <!-- game overview start  -->
-      <div class="section info">
+      <div class="section info" id="info">
         <div class="layer"></div>
         <div class="content">
           <h1 class="main-headings">Game Overview</h1>
@@ -221,7 +231,7 @@
       <!-- characters end -->
 
       <!-- latest news start -->
-      <div class="section news">
+      <div class="section news" id="news">
         <div class="news-layer"></div>
         <div>
           <div class="news-heding">
@@ -240,7 +250,11 @@
                   Assassin’s Creed Codename Jade Takes Players to China’s First
                   Empire
                 </h2>
-                <a href="">Read More</a>
+                <a
+                  href="https://www.ubisoft.com/en-gb/game/assassins-creed/news-updates/4Z7c4XLm13v7ToVP5BjLQo/assassins-creed-codename-jade-takes-players-to-chinas-first-empire"
+                  target="_blank"
+                  >Read More</a
+                >
               </div>
             </div>
 
@@ -256,7 +270,11 @@
                   How Assassin’s Creed Nexus VR Lets Players Become Master
                   Assassins
                 </h2>
-                <a href="">Read More</a>
+                <a
+                  href="https://www.ubisoft.com/en-us/game/assassins-creed/news-updates/1tUEbPctwiUTkxV7xsLT5t/how-assassins-creed-nexus-vr-lets-players-become-master-assassins"
+                  target="_blank"
+                  >Read More</a
+                >
               </div>
             </div>
 
@@ -272,8 +290,12 @@
                   Assassin's Creed IV: Black Flag Sequel Webcomic Coming
                   Exclusively to WEBTOON
                 </h2>
-                  <a href="">Read More</a>
-                </div>
+                <a
+                  href="https://news.ubisoft.com/en-us/article/27VidMvRzYw2IdlqpuIe6V/assassins-creed-iv-black-flag-sequel-webcomic-coming-exclusively-to-webtoon"
+                  target="_blank"
+                  >Read More</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -281,9 +303,11 @@
       <!-- latest news end -->
 
       <!-- comments start -->
-      <div class="comment">
+      <div class="comment" id="media">
         <div class="comment-layer"></div>
-        <div class="tophead"><h1 class="main-headings">Top Comments</h1></div>
+        <div class="tophead">
+          <h1 class="main-headings">Top Comments</h1>
+        </div>
         <div class="comment-container">
           <div class="comment-container-left">
             <div class="lefttopcorner">
@@ -359,8 +383,8 @@
           </div>
         </div>
       </div>
-
       <!-- comment end -->
+
       <div class="footer">
         <div class="footer-top">
           <div class="footer-dis">
@@ -418,8 +442,8 @@
         </div>
         <div class="credit">
           <p>
-            &copy; 2023 <strong>Ubisoft Coparation, LLC. </strong> All Right
-            Reserved.
+            &copy; 2023 <strong> N.T.D.T.Sandamini - IM/2020/095 </strong> All
+            Right Reserved.
           </p>
         </div>
       </div>

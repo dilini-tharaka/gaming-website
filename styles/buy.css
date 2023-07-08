@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #0f0e0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: inherit;
+}
+
+.img-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.img-box .logo {
+  height: 80%;
+}
+
+.home-icon-box {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  /* background-color: #fff; */
+  /* margin-right: 90px; */
+  transition: all 0.5s ease-in-out;
+}
+
+.home-icon {
+  width: 90%;
+  padding: 5px;
+}
+
+.home-icon-box:hover {
+  transform: scale(1.1);
+  background-color: #302e2e;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.section-bg{
+    width: 100%;
+     height: 100vh;
+     background-attachment: fixed;
+    margin-top: 100px;
+    position: relative;
+    background-image: url("../img/buybg.jpg");
+}
+
+.section-bg-layer{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    opacity: 0.7;
+    position: absolute;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgb(92, 90, 91); */
+  display: flex;
+  /* margin-top: 100px; */
+  position: absolute;
+}
+
+.content .leftcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* height:500px; */
+  /* background-color: aquamarine; */
+}
+
+.content .rightcontent {
+  width: 60%;
+  /* height: 100vh; */
+  background-image: url("../img/buy-goald.png");
+  background-size: contain;
+  display: none;
+}
+
+.leftcontent .topic{
+    width: 70%;
+    height: 20px;
+    /* background-color: aqua; */
+    margin-left: 10px;
+    padding: 20px;
+    font-size: large;
+    color: #fff;
+}
+
+.dropdown-box{
+    width: 70%;
+    height: 60px;
+    /* background-color: #fff; */
+    margin-left: 70px;
+    margin-bottom: 29px;
+    /* padding: 20px; */
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-box select{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: large;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.dropdown-box select:focus{
+    background-color: #f2f2f2;
+}
+
+.details{
+    width: 80%;
+    /* height: 60px; */
+    margin-left: 30px;
+    margin-bottom: 8px;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: #fff;
+    background-color:#000;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.details:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+.details .discription{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    /* text-align:center; */
+}
+
+.btn-submit{
+  height: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 60px;
+    font-family: "Belanosima", sans-serif;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #f2c12e;
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+
+  .btn-submit:hover {
+    background-color: #fad157;
+    transform: scale(1.1);
+    color: black;
+  }
+  
+  @media(min-width: 992px){
+    .content .rightcontent {
+      width: 60%;
+      /* height: 100vh; */
+      background-image: url("../img/buy-goald.png");
+      background-size: contain;
+      display: block;
+    }
+
+    .content .leftcontent {
+        width: 38%;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* height:500px; */
+        /* background-color: aquamarine; */
+      }
+
+      .home-icon-box {
+        margin-right: 90px;
+      }
+  }
+    
